@@ -9,7 +9,6 @@ public class Produs {
         this.stoc = stoc;
     }
 
-
     public String getDenumire() {
         return denumire;
     }
@@ -23,9 +22,16 @@ public class Produs {
     }
 
 
+    public double costPentru(int portii) {
+        return this.pret * portii;
+    }
+
+    public boolean esteDisponibil(int portii) {
+        return this.stoc >= portii;
+    }
+
     @Override
     public String toString() {
         return String.format("Produs: %-18s | Preț: %6.2f lei | Stoc: %d porții", denumire, pret, stoc);
     }
-
 }
