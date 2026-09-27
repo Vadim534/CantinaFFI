@@ -1,9 +1,18 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
+
+
+
+            Locale.setDefault(Locale.US);
+
+
+            Produs p1 = new Produs("Zeama de casa ", 24.50, 51);
+            Produs p2 = new Produs("Piure cu parjoala", 46.00, 21);
+            Produs p3 = new Produs("Salata de varza", 18.00, 67);
+
+            System.out.println(p1);
+            System.out.println(p2);
+            System.out.println(p3);
 
 
 }
